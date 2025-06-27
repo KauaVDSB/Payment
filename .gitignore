@@ -1,0 +1,8 @@
+# Dependências
+node_modules/
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

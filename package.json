@@ -1,0 +1,12 @@
+{
+  "name": "mercado-pago-study",
+  "version": "1.0.0",
+  "description": "Template para estudo de integração com Mercado Pago na Vercel",
+  "main": "api/create-preference.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "mercadopago": "^2.0.0"
+  }
+}
