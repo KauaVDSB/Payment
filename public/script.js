@@ -1,6 +1,6 @@
 document.getElementById('buyButton').addEventListener('click', async () => {
     try {
-        const response = await fetch(`/api/create-preference.js`, 
+        const response = await fetch(`/api/create-preference`, 
             {
                 method: 'POST',
                 headers: {
@@ -16,7 +16,7 @@ document.getElementById('buyButton').addEventListener('click', async () => {
         );
 
         if(!response.ok) {
-            const errorText = response.text();
+            const errorText = await response.text();
             throw new Error(`Erro ao criar preferência de pagamento. ${response.status} - ${errorText}`);
         }
 
