@@ -2,7 +2,7 @@ const { MercadoPagoConfig, Preference } = require('mercadopago');
 
 
 const client = new MercadoPagoConfig({
-    access_token: process.env.MERCADO_PAGO_ACCESS_TOKEN
+    access_token: 'APP_USR-4420010945361528-062721-c91c9eed43c4acd71311451776621b07-2207360679'
 });
 
 const preferenceAPI = new Preference(client);
@@ -24,13 +24,13 @@ module.exports = async (req, res) => {
                 ],
 
                 back_urls: {
-                    success: `${process.env.VERCEL_URL}/success`,
-                    failure: `${process.env.VERCEL_URL}/failure`,
-                    pending: `${process.env.VERCEL_URL}/pending`
+                    success: `https://payment-sand-mu.vercel.app/success`,
+                    failure: `https://payment-sand-mu.vercel.app/failure`,
+                    pending: `https://payment-sand-mu.vercel.app/pending`
                 },
 
                 auto_return: "approved",
-                notification_url: `${process.env.VERCEL_URL}/api/webhook-mercadopago`
+                notification_url: `https://payment-sand-mu.vercel.app/api/webhook-mercadopago`
             };
 
 
