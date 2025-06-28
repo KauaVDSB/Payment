@@ -1,8 +1,12 @@
-const mercadopago = require('mercadopago');
+const { MercadoPagoConfig, Preference } = require('mercadopago');
 
-mercadopago.configure({
+
+const client = new MercadoPagoConfig({
     access_token: process.env.MERCADO_PAGO_ACCESS_TOKEN
 });
+
+const preferenceAPI = new Preference(client);
+
 
 module.exports = async (req, res) => {
     if (req.method === 'POST') {
@@ -10,7 +14,7 @@ module.exports = async (req, res) => {
 
 
         try {
-            const preference = {
+            const preferenceBody = {
                 items: [
                     {
                         title: title,
@@ -31,12 +35,12 @@ module.exports = async (req, res) => {
 
 
             if (picture_url) {
-                preference.items[0].picture_url = picture_url;
+                preferenceBody.items[0].picture_url = picture_url;
             }
 
 
-            const response = await mercadopago.preferences.create(preference);
-            res.status(200).json({ init_point: response.body.init_point });
+            const response = await preferenceAPI.create({ body: preferenceBody });
+            res.status(200).json({ init_point: response.init_point });
 
 
         } catch (error) {
