@@ -24,9 +24,9 @@ module.exports = async (req, res) => {
                 ],
 
                 back_urls: {
-                    success: `${process.env.VERCEL_URL}/success`,
-                    failure: `${process.env.VERCEL_URL}/failure`,
-                    pending: `${process.env.VERCEL_URL}/pending`
+                    success: `${process.env.VERCEL_URL}`,
+                    failure: `${process.env.VERCEL_URL}`,
+                    pending: `${process.env.VERCEL_URL}`
                 },
 
                 auto_return: "approved",
