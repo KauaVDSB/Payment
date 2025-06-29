@@ -1,6 +1,6 @@
 document.getElementById('buyButton').addEventListener('click', async () => {
     try {
-        const response = await fetch(`/api/create-preference`, 
+        const response = await fetch('/api/create-preference', 
             {
                 method: 'POST',
                 headers: {
@@ -10,7 +10,6 @@ document.getElementById('buyButton').addEventListener('click', async () => {
                     title: 'Produto Fantasma',
                     unit_price: 1.01,
                     quantity: 1,
-                    picture_url: '',
                 })
             }
         );
