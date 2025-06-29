@@ -10,6 +10,7 @@ document.getElementById('buyButton').addEventListener('click', async () => {
                     title: 'Produto Fantasma',
                     unit_price: 1.01,
                     quantity: 1,
+                    picture_url: '',
                 })
             }
         );

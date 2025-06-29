@@ -10,7 +10,7 @@ const preference = new Preference(client);
 
 module.exports = async (req, res) => {
     if (req.method === 'POST') {
-        const { title, unit_price, quantity } = req.body;
+        const { title, unit_price, quantity, picture_url } = req.body;
 
 
         try {
@@ -21,7 +21,8 @@ module.exports = async (req, res) => {
                             id: 'teste-01',
                             title: 'Produto Fantasma',
                             quantity: 1,
-                            unit_price: 1.01
+                            unit_price: 1.01,
+                            picture_url: ''
                         }
                     ],
     
