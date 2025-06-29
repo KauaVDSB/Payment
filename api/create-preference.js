@@ -39,11 +39,11 @@ module.exports = async (req, res) => {
 
 
             if (picture_url) {
-                preferenceBody.items[0].picture_url = picture_url;
+                preference.items[0].picture_url = picture_url;
             }
 
 
-            const response = await preference.create({ body: preferenceBody });
+            const response = await preference.create({ body: preference });
             res.status(200).json({ init_point: response.init_point });
 
 
