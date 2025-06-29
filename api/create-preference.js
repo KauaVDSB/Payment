@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
                             title: 'Produto Fantasma',
                             quantity: 1,
                             unit_price: 1.01,
-                            picture_url: ''
+                            picture_url: '',
                         }
                     ],
     
