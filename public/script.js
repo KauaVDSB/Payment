@@ -3,7 +3,7 @@ document.getElementById('buyButton').addEventListener('click', async () => {
         const productData = {
             id: 'product-001',
             title: 'Produto de Teste #1',
-            unit_price: 10.50, // Use ponto para decimais em JavaScript
+            unit_price: 2.50, // Use ponto para decimais em JavaScript
             quantity: 1,
             picture_url: 'https://via.placeholder.com/150' // URL de uma imagem de placeholder
         };
