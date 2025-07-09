@@ -1,7 +1,7 @@
 {
-  "name": "mercado-pago-study",
+  "name": "mercado-pago-full-integration",
   "version": "1.0.0",
-  "description": "Template para estudo de integração com Mercado Pago na Vercel",
+  "description": "Projeto completo para estudo de integração com Mercado Pago na Vercel, incluindo webhooks.",
   "main": "api/create-preference.js",
   "scripts": {
     "start": "vercel dev"

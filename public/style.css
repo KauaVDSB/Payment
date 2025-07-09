@@ -24,7 +24,7 @@ main {
     padding: 20px;
 }
 
-.card-produto {
+.product-card {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
@@ -34,19 +34,19 @@ main {
     width: 100%;
 }
 
-.card-produto h2 {
+.product-card h2 {
     color: #007bff;
     margin-bottom: 10px;
 }
 
-.card-produto .price {
+.product-card .price {
     font-size: 2em;
     color: #28a745;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.card-produto p {
+.product-card p {
     margin-bottom: 25px;
     line-height: 1.6;
 }
@@ -73,4 +73,24 @@ footer {
     padding: 1rem 0;
     margin-top: auto;
     font-size: 0.9em;
+}
+
+
+
+.button-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remover sublinhado do link */
+    margin-top: 20px;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
 }
